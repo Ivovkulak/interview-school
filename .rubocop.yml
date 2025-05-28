@@ -26,8 +26,14 @@ AllCops:
 Style/Documentation:
   Enabled: false  # Disable mandatory documentation for classes
 
+RSpecRails/InferredSpecType:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
   Enabled: true   # Encourage frozen string literals for performance
+  Exclude:
+    - 'spec/**/*'
+    - 'db/**/*'
 
 Metrics/BlockLength:
   Exclude:
