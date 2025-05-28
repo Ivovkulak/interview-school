@@ -29,6 +29,18 @@ Style/Documentation:
 RSpecRails/InferredSpecType:
   Enabled: false
 
+RSpec/IndexedLet:
+  Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+FactoryBot/ConsistentParenthesesStyle:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
   Enabled: true   # Encourage frozen string literals for performance
   Exclude:

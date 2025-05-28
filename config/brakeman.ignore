@@ -1,0 +1,28 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "SQL Injection",
+      "warning_code": 0,
+      "fingerprint": "9579d577afa9bfcd8f2ac594f6bc0ede08c12d3db5310fe13a7bbcc032b9461e",
+      "check_name": "SQL",
+      "message": "Possible SQL injection",
+      "file": "app/services/student_section_availability_check.rb",
+      "line": 36,
+      "link": "https://brakemanscanner.org/docs/warning_types/sql_injection/",
+      "code": "student_profile.sections.where(\"#{((\"((#{\"#{d_name.downcase}_start\"} <= ? AND #{\"#{d_name.downcase}_end\"} > ?)\" + \" OR (#{\"#{d_name.downcase}_start\"} < ? AND #{\"#{d_name.downcase}_end\"} >= ?)\") + \" OR (#{\"#{d_name.downcase}_start\"} >= ? AND #{\"#{d_name.downcase}_end\"} <= ?))\")}\", *[section.public_send(\"#{d_name.downcase}_start\").strftime(\"%H:%M\"), section.public_send(\"#{d_name.downcase}_start\").strftime(\"%H:%M\"), section.public_send(\"#{d_name.downcase}_end\").strftime(\"%H:%M\"), section.public_send(\"#{d_name.downcase}_end\").strftime(\"%H:%M\"), section.public_send(\"#{d_name.downcase}_start\").strftime(\"%H:%M\"), section.public_send(\"#{d_name.downcase}_end\").strftime(\"%H:%M\")])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "StudentSectionAvailabilityCheck",
+        "method": "perform"
+      },
+      "user_input": "d_name.downcase",
+      "confidence": "Weak",
+      "cwe_id": [
+        89
+      ],
+      "note": "Im sure)"
+    }
+  ],
+  "brakeman_version": "7.0.2"
+}
