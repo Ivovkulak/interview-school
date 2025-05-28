@@ -1,8 +1,18 @@
 # Goji Labs Interview Take-Home Project
 
+Please create config/database.yml file (see config/database.yml.example)
 
 ## Overview
-For our technical interview, we want you to build the foundation for a university course scheduling system. There should be teachers, subjects, classrooms, students, and another model called sections. A section represents a teacher teaching a subject in a specific classroom at a specfic time with students who attend the class. Think of it like the join model between all the other entities, and with specific times. Some sections are taught only on Monday, Wednesday, and Friday, others are only taught on Tuesdays and Thursdays, and some are every day. Sections typically are 50 minutes long, but they can also be 80 minutes. The earliest sections start at 7:30am and the latest ones end at 10pm.
+For our technical interview, we want you to build the foundation for a university course scheduling system. There should be 
+
+teachers
+subjects
+classrooms
+students
+sections.
+
+A section represents a teacher teaching a subject in a specific classroom at a specfic time with students who attend the class. Think of it like the join model between all the other entities, and with specific times. 
+Some sections are taught only on Monday, Wednesday, and Friday, others are only taught on Tuesdays and Thursdays, and some are every day. Sections typically are 50 minutes long, but they can also be 80 minutes. The earliest sections start at 7:30am and the latest ones end at 10pm.
 
 ## Goals
 1. Students should be able to add/remove sections to their schedule
